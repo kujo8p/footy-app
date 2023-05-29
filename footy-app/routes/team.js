@@ -4,8 +4,6 @@ const teamCtrl = require('../controllers/team')
 const ensureLoggedIn = require('../config/ensureLoggedIn')
 
 /* GET users listing. */
-router.get('/', function (req, res, next) {
-  res.send('respond with a resource')
-})
+router.get('/', teamCtrl.index)
 
 module.exports = router
