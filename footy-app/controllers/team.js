@@ -11,7 +11,7 @@ const newPlayer = async (req, res) => {
 
 const show = async (req, res) => {
   res.render('team/show', {
-    player: Player.getOne(req.params.id),
+    player: Player.findById(req.params.id),
     title: 'Player Stats'
   })
 }
@@ -21,9 +21,15 @@ const create = async (req, res) => {
   res.redirect('/team')
 }
 
+const deletePlayer = async (req, res) => {
+  Player.deleteOne(req.params.id)
+  res.redirect('/team')
+}
+
 module.exports = {
   index,
   new: newPlayer,
   create,
-  show
+  show,
+  delete: deletePlayer
 }

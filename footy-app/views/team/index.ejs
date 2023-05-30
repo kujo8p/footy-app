@@ -8,6 +8,9 @@
   <tbody>
     <% players.forEach(function(p) { %>
       <tr>
+        <td><form action="/team/<%= p._id %>?_method=DELETE" method="POST">
+          <button type="submit">Delete</button></td>
+        </form>
         <td><%= p.number %></td>
         <td><%= p.name %></td>
         <td><%= p.position %></td>
