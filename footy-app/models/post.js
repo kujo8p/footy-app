@@ -30,3 +30,5 @@ const postSchema = new Schema({
   userAvatar: String,
   comments: [commentSchema]
 })
+
+module.exports = mongoose.model('Post', postSchema)

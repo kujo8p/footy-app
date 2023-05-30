@@ -5,5 +5,6 @@ const ensureLoggedIn = require('../config/ensureLoggedIn')
 
 /* GET users listing. */
 router.get('/', teamCtrl.index)
+router.get('/new', teamCtrl.new)
 
 module.exports = router
