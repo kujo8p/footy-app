@@ -6,17 +6,20 @@
   <tbody>
     <% posts.forEach(function(p) { %>
       <tr>
-        <td><%= p.title %></td><br>
-        <td><%= p.content %></td>
+        <div id="title"><%= p.title %></div><br>
+        <div><td id="content"><%= p.content %></td></div>
         <td><form action="/<%= p._id %>?_method=DELETE" method="POST"
           class="delete-form">
           <button type="submit">X</button>
         </form></td>
       </tr>
-    <% }) %>
-  </tbody>
-</table>
+      <% }) %>
+    </tbody>
+  </table>
 
+  <hr>
+
+  <% if (user) { %>
 <form action="/" method="POST" autocomplete="off">
   <div>Title</div>
   <input type="text" name="title"><br>
@@ -24,5 +27,6 @@
   <textarea name="content" id="" cols="80" rows="5"></textarea><br>
   <button type="submit">Create Post</button>
 </form>
+<% } %>
 
 <%- include('./partials/footer')%>
