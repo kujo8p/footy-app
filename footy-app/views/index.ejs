@@ -2,6 +2,15 @@
 
 <h2>Bayern Blog Page</h2>
 
+<section id="post-area">
+  <% posts.forEach(function(p) { %>
+<div>
+  <%= p.title %>
+  <%= p.content %>
+</div>
+  <% }) %>
+</section>
+
 <form action="/" method="POST" autocomplete="off">
   <div>Title</div>
   <input type="text"><br>
