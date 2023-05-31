@@ -2,12 +2,15 @@ const Post = require('../models/post')
 
 const index = async (req, res) => {
   const posts = await Post.find({})
-  res.render('index', { posts, title: 'All Posts' })
+  res.render('/', { posts, title: 'All Posts' })
+}
+
+const create = async (req, res) => {
+  await Post.create(req.body)
+  res.redirect('/')
 }
 
 module.exports = {
   index,
-  new: newPost,
-  show,
   create
 }

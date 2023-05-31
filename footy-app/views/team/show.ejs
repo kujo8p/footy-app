@@ -5,8 +5,31 @@
   <div><%= player.name %></div>
   <div><%= player.position %></div>
 </section>
-<section id="stats">
-  
-</section>
 
+<hr>
+
+<tbody>
+  <% player.stats.forEach(function(s) { %>
+    <div>Matches: <%= s.matches %></div>
+    <td></td>
+    <div>Goals: <%= s.goals %></div>
+    <td></td>
+    <div>Assists: <%= s.assists %></div>
+    <td></td>
+  <% }) %>
+</tbody>
+
+<hr>
+
+<section id="stats">
+  <form action="/team/<%= player._id %>/stats" method="POST">
+    <label name="matches">Matches</label>
+    <input type="number" name="matches"><br>
+    <label name="goals">Goals</label>
+    <input type="number" name="goals"><br>
+    <label name="assists">Assists</label>
+    <input type="number" name="assists"><br>
+    <input type="submit" value="Add Stats">
+  </form>
+</section>
 <%- include('../partials/footer')%>

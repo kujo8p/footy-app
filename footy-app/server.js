@@ -11,8 +11,9 @@ require('dotenv').config()
 require('./config/database')
 require('./config/passport')
 
-var indexRouter = require('./routes/index')
-var teamRouter = require('./routes/team')
+const indexRouter = require('./routes/index')
+const postsRouter = require('./routes/posts')
+const teamRouter = require('./routes/team')
 const statsRouter = require('./routes/stats')
 
 var app = express()
@@ -43,6 +44,7 @@ app.use(function (req, res, next) {
 })
 
 app.use('/', indexRouter)
+app.use('/', postsRouter)
 app.use('/team', teamRouter)
 app.use('/team', statsRouter)
 
