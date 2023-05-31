@@ -1,10 +1,12 @@
 var express = require('express')
 var router = express.Router()
 const passport = require('passport')
+const Post = require('../models/post')
 
 /* GET home page. */
-router.get('/', function (req, res, next) {
-  res.render('index', { title: 'Bayern Munich Team Page' })
+router.get('/', async function (req, res, next) {
+  const posts = await Post.find({})
+  res.render('index', { title: 'Bayern Munich Team Page', posts })
 })
 
 router.get(

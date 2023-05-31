@@ -2,6 +2,21 @@
 
 <h2>Bayern Blog Page</h2>
 
+<table id="post">
+  <tbody>
+    <% posts.forEach(function(p) { %>
+      <tr>
+        <td><%= p.title %></td><br>
+        <td><%= p.content %></td>
+        <td><form action="/<%= p._id %>?_method=DELETE" method="POST"
+          class="delete-form">
+          <button type="submit">X</button>
+        </form></td>
+      </tr>
+    <% }) %>
+  </tbody>
+</table>
+
 <form action="/" method="POST" autocomplete="off">
   <div>Title</div>
   <input type="text" name="title"><br>

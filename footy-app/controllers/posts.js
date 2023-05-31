@@ -10,7 +10,13 @@ const create = async (req, res) => {
   res.redirect('/')
 }
 
+const deletePost = async (req, res) => {
+  await Post.findByIdAndDelete(req.params.id)
+  res.redirect('/')
+}
+
 module.exports = {
   index,
-  create
+  create,
+  delete: deletePost
 }
