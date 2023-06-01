@@ -5,16 +5,21 @@ const commentSchema = new Schema({
   content: String
 })
 
-const postSchema = new Schema({
-  title: {
-    type: String,
-    required: true
+const postSchema = new Schema(
+  {
+    title: {
+      type: String,
+      required: true
+    },
+    content: {
+      type: String,
+      required: true
+    },
+    time: { type: Date, default: Date.now }
   },
-  content: {
-    type: String,
-    required: true
-  },
-  comments: [commentSchema]
-})
+  {
+    timestamps: true
+  }
+)
 
 module.exports = mongoose.model('Post', postSchema)

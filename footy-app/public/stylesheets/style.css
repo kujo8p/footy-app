@@ -1,39 +1,166 @@
 * {
   box-sizing: border-box;
   font-family: Helvetica;
-  color: #424748;
 }
 
+header {
+  background: url("https://i.imgur.com/FSN78CR.jpg");
+  background-size: cover;
+  background-position: inherit;
+  height: 300px;
+  margin-top: 20px;
+}
+
+hr {
+  border: 1px solid #010536;
+}
+
+input {
+  background-color: #2d337a;
+  color: whitesmoke;
+  border: black;
+  border-radius: .5rem;
+  margin: 5px 0;
+}
+
+textarea {
+  background-color: #2d337a;
+  color: whitesmoke;
+  border: black;
+  border-radius: .5rem;
+  margin: 5px 0;
+  width: 800px;
+}
+
+#title {
+  border-radius: .5rem;
+  background-color: #2d337a;
+  color: whitesmoke;
+  width: 500px;
+  height: 25px;
+  text-align: left;
+  margin: 10px 0px;
+}
+
+#post {
+  border: 2px solid black;
+  border-radius: .5rem;
+  background-color: #2d337a;
+  color: whitesmoke;
+  text-align: left;
+  padding: 10px;
+  width: 800px;
+  margin: 0 auto;
+}
+
+#create-post {
+  margin: 0 auto;
+}
+
+tbody {
+  width: 900px;
+}
+
+form > div {
+  color: white;
+}
+
+form > button {
+  background-color: #010536;
+  color: white;
+  border: 2px solid black;
+  border-radius: .5rem;
+}
+
+.forward-list {
+  border: 2px solid black;
+  border-radius: .5rem;
+  background-color: #2d337a;
+  color: whitesmoke;
+  text-align: left;
+  width: 1000px;
+  margin: 10px auto;
+  padding: 40px 40px;
+}
+
+.row1 {
+  width: 100px;
+}
+
+.row2 {
+  width: 500px;
+}
+
+.row3, .row4, .row5 {
+  width: 300px;
+}
+
+section > p {
+  color: whitesmoke;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#player-info {
+  color: whitesmoke;
+}
+
+.matches, .goals, .assists {
+  color: whitesmoke;
+}
+
+#stats {
+  color: whitesmoke;
+  visibility: hidden;
+}
 
 body {
+  background-color: #010536;
   margin: 0 auto;
   height: 10vh;
+  color: black;
+
   display: grid;
   grid-template-rows: 50px 1fr;
   grid-template-areas: 
     "nav"
-    "main"
+    "main";
 }
 
+h1, h2, h3 {
+  color: white;
+  text-align: center;
+}
+
+img {
+  width: 10px;
+}
+
+#gif {
+  margin: 0 auto;
+}
 
 a {
-  color: black;
+  color: white;
+  text-align: center;
 }
 
 body > nav {
   grid-area: nav;
-  background-color: #B8C0C2;
-  height: 60px;
+  background-color: red;
+  height: 80px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 20px 30px;
+  margin: 0;
+  padding: 10px 30px 20px 30px;
+  color: white;
 }
 
-nav > img {
+
+nav > #logo {
   width: 34px;
   object-fit: contain;
-  margin-right: auto;
 }
 
 nav > a {
@@ -62,4 +189,5 @@ nav > a.active {
 
 .login img {
   height: 30px;
+  width: 30px;
 }

@@ -8,8 +8,11 @@
   <title>Bayern Munich Blog Page</title>
 </head>
 
+
+
 <body>
   <nav> 
+  <img id="logo" src="https://img.fcbayern.com/image/upload/v1685202905/cms/public/images/administration/global/meister.gif">
   <a href="/" <%- title === 'Home' ? 'class="active"' : '' %>>Home</a>
   <% if (user) { %>
   <a href="/team" <%- title === 'Team' ? 'class="active"' : '' %></a>Team</a>
@@ -18,5 +21,9 @@
   <a href="/auth/google" class="login">LOG IN&nbsp;<img src="https://i.imgur.com/FHjYyi0.png"></a>
   <% } %>
 </nav>
+
+<header>
+  <img src="" alt="">
+</header>
 
   <h1><%= title %></h1>
