@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
-  font-family: Helvetica;
+  font-family: 'Josefin Sans', sans-serif;
+font-family: 'Open Sans', sans-serif;
 }
 
 header {
@@ -86,14 +87,20 @@ form > button {
 
 .row1 {
   width: 100px;
+  font-style: oblique;
+  font-size: 20px;
 }
 
 .row2 {
   width: 500px;
+  font-style: oblique;
+  font-size: 20px;
 }
 
 .row3, .row4, .row5 {
   width: 300px;
+  font-style: oblique;
+  font-size: 20px;
 }
 
 section > p {
@@ -105,6 +112,7 @@ section > p {
 #player-info {
   color: whitesmoke;
   font-size: 20px;
+  margin: 40px 40px;
 }
 
 .matches, .goals, .assists {
@@ -147,6 +155,7 @@ img {
 #gif {
   margin: 0 auto;
 }
+
 
 a {
   color: white;
