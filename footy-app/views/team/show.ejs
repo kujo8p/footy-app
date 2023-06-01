@@ -1,13 +1,13 @@
 <%- include('../partials/header')%>
 
+
 <section id="player-info">
-  <div><%= player.number %></div>
-  <div><%= player.name %></div>
-  <div><%= player.position %></div>
+<table>
+  <div class="float"> <%= player.number %> </div>
+  <div class="float"> <%= player.name %> </div>
+  <div class="float"> <%= player.position %> </div>
 </section>
-
 <hr>
-
 <tbody>
   <% player.stats.forEach(function(s) { %>
     <div class="matches">Matches: <%= s.matches %></div>
@@ -18,7 +18,7 @@
     <td></td>
   <% }) %>
 </tbody>
-
+</table>
 <hr>
 
 <section id="stats">
