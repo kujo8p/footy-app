@@ -16,6 +16,10 @@ hr {
   border: 1px solid #010536;
 }
 
+#penis {
+  padding: 40px 0 0 0;
+}
+
 input {
   background-color: #2d337a;
   color: whitesmoke;
@@ -113,16 +117,18 @@ section > p {
   color: whitesmoke;
   font-size: 20px;
   margin: 40px 40px;
+  text-align: center;
 }
 
 .matches, .goals, .assists {
   color: whitesmoke;
   font-size: 20px;
+  text-align: center;
 }
 
 .float {
   display: inline-block;
-  margin: 5px;
+  margin: 0 5px;
 }
 
 #stats {
@@ -148,12 +154,18 @@ h1, h2, h3 {
   text-align: center;
 }
 
+h2 {
+  padding: 0 0 25px 0;
+}
+
 img {
   width: 10px;
 }
 
 #gif {
   margin: 0 auto;
+  border: 2px solid black;
+  border-radius: .5rem;
 }
 
 

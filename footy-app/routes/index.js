@@ -6,7 +6,7 @@ const Post = require('../models/post')
 /* GET home page. */
 router.get('/', async function (req, res, next) {
   const posts = await Post.find({})
-  res.render('index', { title: 'Bayern Munich Team Page', posts })
+  res.render('index', { title: 'Bayern Munich Home Page', posts })
 })
 
 router.get(
