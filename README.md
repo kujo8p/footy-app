@@ -22,7 +22,7 @@ The Bayern Munich Team Page will consist of a home page showing recent news arti
 
 - Express
 - Node.js
-- MongoDG
+- MongoDB
 - EJS
 
 ---
