@@ -14,7 +14,7 @@
 
 ### _Description_
 
-The Bayern Munich Team Page will consist of a team page showing the teams schedule and record, a players page that shows individul player stats, and a shop page that offers team merchendise.
+The Bayern Munich Team Page will consist of a home page showing recent news articles about the team. A team page that displays the teams roster, stadium, and player stats. Finally, a players page that shows individul player stats.
 
 ---
 
