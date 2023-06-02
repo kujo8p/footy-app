@@ -29,14 +29,20 @@ The Bayern Munich Team Page will consist of a home page showing recent news arti
 
 ### _Getting Started_
 
-
+[Github](https://github.com/kujo8p/footy-app)
 
 Fork and clone from the repo above and launch via Live Server to enjoy locally.
 
 
 
-Follow this link to reach my welcome page, read the instructions, press "Play Game!", and enjoy!
+Follow this link to reach the home page, log in, and enjoy!
 
 ---
 
 ### _Credits_
+
+[FC Bayern Munich](https://fcbayern.com/en)
+
+[Giphy](https://giphy.com/fcbayern)
+
+[Google Fonts](https://fonts.google.com/)
